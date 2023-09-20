@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+
+        background-position: center;
+        background-size: cover;
+        height: 109vh;
+    }
+
+    .left {
+        /*
+            border: 3px solid red; 
+            */
+        display: inline-block;
+        position: absolute;
+        left: -1px;
+        top: 5px;
+
+    }
+
+    .center {
+        display: block;
+        width: 51%;
+        margin: 20px auto;
+        /*
+            border: 3px solid yellowgreen; 
+            */
+
+    }
+
+    .right {
+        /*
+            border: 3px solid green; 
+            */
+        display: inline-block;
+        position: absolute;
+        /* kisi ko be right krna ho toh ese use kro*/
+        right: 34px;
+        top: 20px;
+
+
+    }
+
+    /* All have css with center work */
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 11px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(149, 152, 154);
+        text-decoration: underline;
+    }
+
+    /* left css is start  */
+    .left img {
+        width: 100px;
+        margin-top: -18px;
+        padding-left: 0%;
+        filter: invert(100%);
+        margin-left: 0%;
+    }
+
+    .left div {
+        margin-top: -28%;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /* right css start */
+    .right {
+        margin: right -1px;
+        ;
+    }
+
+    .btn {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0px;
+        background-color: white;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(61, 59, 59);
+    }
+
+    .container {
+        /*
+            border :2px solid white;
+            */
+        padding: 75px;
+        margin: 38px 0px;
+        width: 40%;
+        border-radius: 35px;
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 311px;
+        margin: 3px auto;
+        padding: 4px;
+        /*
+            border: 2px solid rgb(252, 253, 252); 
+            */
+        margin: 11px auto;
+        font-size: 17px;
+        border-radius: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .form-group input:hover {
+        background-color: white;
+    }
+
+    .container h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 26%;
+        margin: 20px auto;
+
+    }
+
+    header::before {
+        background: url('https://source.unsplash.com/random/?gym') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="3.2_gym_logo2.png" alt="">
+            <div>Viki Fitness</div>
+
+        </div>
+
+        <div class="center">
+
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="">fitness Product</a></li>
+                <li> <a href="">services</a></li>
+                <li> <a href="">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Jion the best gym now in patiala</h1>
+        <form action="nophp.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Full name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contact number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="E-mail address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
